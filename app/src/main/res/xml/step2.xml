@@ -34,7 +34,7 @@
            app:layout_constraintEnd_toEndOf="parent"
            app:layout_constraintBottom_toBottomOf="parent" />
 
-   <Constraint
+        <Constraint
            android:id="@+id/left_star"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
            app:layout_constraintEnd_toEndOf="parent"
            app:layout_constraintBottom_toBottomOf="parent" />
 
-   <Constraint
+        <Constraint
            android:id="@+id/right_star"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
            app:layout_constraintEnd_toStartOf="@id/red_star"
            app:layout_constraintTop_toBottomOf="@id/credits" />
 
-   <Constraint
+        <Constraint
            android:id="@+id/red_star"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
            app:layout_constraintEnd_toStartOf="@id/right_star"
            app:layout_constraintTop_toBottomOf="@id/credits" />
 
-   <Constraint
+`       <Constraint
            android:id="@+id/right_star"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
