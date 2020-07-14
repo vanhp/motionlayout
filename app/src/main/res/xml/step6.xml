@@ -33,8 +33,8 @@
                     app:framePosition="25"
                     app:motionTarget="@id/moon"
                     app:keyPositionType="parentRelative"
-                    app:percentY="0.6"
-            />
+                    app:percentY="0.6">
+            </KeyPosition>
             <KeyPosition
                     app:framePosition="50"
                     app:motionTarget="@id/moon"
@@ -48,24 +48,43 @@
                     app:percentY="0.6"
             />
             <KeyAttribute
+                app:framePosition="00"
+                app:motionTarget="@id/moon"
+                android:scaleY="2.0"
+                android:scaleX="2.0"
+                android:rotation="-360">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="#FDF9F9" />
+            </KeyAttribute>
+
+            <KeyAttribute
                     app:framePosition="50"
                     app:motionTarget="@id/moon"
                     android:scaleY="2.0"
                     android:scaleX="2.0"
-                    android:rotation="-360"
-            />
+                    android:rotation="-360">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="#E70C22" />
+            </KeyAttribute>
+
+
             <KeyAttribute
                     app:framePosition="100"
                     app:motionTarget="@id/moon"
-                    android:rotation="-720"
-            />
+                    android:rotation="-720">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="#1EE9CB" />
+            </KeyAttribute>
+
             <KeyAttribute
                     app:framePosition="85"
                     app:motionTarget="@id/credits"
-                    android:alpha="0.0"
-            />
+                    android:alpha="0.0">
 
-            <!-- TODO Add Custom attributes here -->
+            </KeyAttribute>
 
         </KeyFrameSet>
     </Transition>
