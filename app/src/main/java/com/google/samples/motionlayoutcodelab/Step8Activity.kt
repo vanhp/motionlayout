@@ -33,7 +33,20 @@ class Step8Activity : AppCompatActivity() {
     }
 
     private fun coordinateMotion() {
-        // TODO: set progress of MotionLayout based on an AppBarLayout.OnOffsetChangedListener
-
+        // set progress of MotionLayout based on an AppBarLayout.OnOffsetChangedListener
+        // register a OnOffsetChangedListener that will be called every time
+        // the user scrolls with the current scroll offset.
+        // MotionLayout supports seeking and jumping to a position in
+        // its transition by setting the progress property.
+        // To convert between a verticalOffset and a percentage progress,
+        // divide by the total scroll range.
+        val appBar: AppBarLayout = findViewById(R.id.appbar_layout)
+        val motion: MotionLayout = findViewById(R.id.motion_layout)
+        val listener = AppBarLayout.OnOffsetChangedListener {
+                        unused,verticalOffset ->
+                        val seekPosition = -verticalOffset / appBar.totalScrollRange.toFloat()
+                        motion.progress = seekPosition
+        }
+        appBar.addOnOffsetChangedListener(listener)
     }
 }
