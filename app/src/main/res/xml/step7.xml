@@ -24,10 +24,12 @@
             app:constraintSetEnd="@+id/end"
             app:duration="3000">
 
-        <!-- Fix OnSwipe by changing touchAnchorSide -->
+        <!-- Fix OnSwipe by changing touchAnchorSide to ignore vertical axis
+        due how swipe work by keeping certain distance when user first touch drag motion
+        at the top when the axis change it follow the right way -->
         <OnSwipe
                 app:touchAnchorId="@id/moon"
-                app:touchAnchorSide="bottom"
+                app:touchAnchorSide="right"
         />
 
 
